@@ -104,7 +104,7 @@ if (SettingData == null) {
 currentVolume = SettingData[0];
 turntime = (18.5*SettingData[1])+150;
 SoundArray = [loss, win, Ultwin, LogoSound, FightSound, ZombieTurnTheme, PlantTurnTheme, MenuTheme];
-News = "Version 1.8.0 is out now, I think it's probably the biggest update yet<br><br> \
+News = "Version 1.8.1 is out now, I think it's probably the biggest update yet<br><br> \
 New features:<br> \
  Boss waves! Every 5 waves, you have to fight a boss wave. Boss waves are uniquely designed waves with new zombies that are designed to be extra challenging! Can you beat all 5 boss waves?<br>\
 New zombie for normal waves: Disco Zombie! Disco Zombie is to replace Gargantuar, as Gargantuar is now a boss zombie and will no longer appear in normal waves.<br>\
@@ -183,7 +183,7 @@ function LoadNew() {
     Message.appendChild(CloseButton);
     MessageHeader = document.createElement("p");
     MessageHeader.className = "MessageHeader";
-    MessageHeader.innerHTML = "What's new in Version 1.8.0";
+    MessageHeader.innerHTML = "What's new in Version 1.8.1";
     Message.appendChild(MessageHeader);
     MessageText = document.createElement("p");
     MessageText.className = "MessageText";
@@ -270,7 +270,7 @@ function BackToMenu() {
     wc.innerHTML = '';
     vc = document.createElement("div");
     vc.id="VersionCount";
-    vc.innerHTML="Beta Version 1.8.0";
+    vc.innerHTML="Beta Version 1.8.1";
     wc.appendChild(vc);
     tc = document.createElement("div");
     tc.id="TitleContainer";
@@ -539,6 +539,7 @@ function StartGame() { /*add lawn background so chomper is defending house*/
     zhealthbararray = [];
     currentPlant.coords = [2,2];
     difficultylevel = 1;
+    StopTurn = false;
     planthealth.innerHTML = Object.assign(currentPlant.health);
     for (z in ZombieArray) {
         ZombieArray[z].health = 50;
@@ -2006,6 +2007,7 @@ Dancers.name = "Summon Backup";
 Dancers.zombie = [Backup]
 Dancers.coords = [[-1,0],[1,0],[0,-1],[0,1]];
 Dancers.reloadTime = 2;
+Dancers.STUP = 2;
 Disco = new Fighter();
 Disco.name = "Disco Zombie";
 Disco.health = 150;
