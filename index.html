@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A turn based combat game featuring Armor Chomper">
+        <link rel="stylesheet" href="style.css">
+        <title>Armor Chomper's Zombie Adventure</title>
+    </head>
+    <body>
+    <div id="EverythingFitter">
+        <button id="MenuLoader" onclick="RemoveBlocker()">Click me</button>
+        <img src="whiteSquare.PNG" id="MenuBlocker">
+        <div id="VersionCount">Beta Version 1.8.0</div>
+        <div id="TitleContainer">
+            <header id='title'>ARMOR CHOMPER (AND CO)'S ZOMBIE ADVENTURE!</header>
+        </div>
+        <p id='BonusText'>Licking doorknobs is illegal on other planets.</p>
+        <img src="PlantLeft.PNG"  id="PlantLeft">
+        <img src="PlantRight.PNG" id="PlantRight">
+        <button id="start-button" onclick="ChoosePlant()">Start New Game</button>
+        <button id="load-button" onclick="LoadGame()">Load Game</button>
+        <button id="how-to-play" onclick="LoadInstructions()">How to play</button>
+        <button id="load-new" onclick="LoadNew()">What's New</button>
+        <button id="settings" onclick="LoadSettings()">Settings</button>
+    </div>
+    </body>
+    <script src="file.js"></script>
+</html>
