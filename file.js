@@ -118,8 +118,10 @@ Fixed bug where player could skip chomper’s chewing phase by reloading the gam
 Fixed bug where you would not be able to move if you tried to escape the grid.<br>\
 Fixed bug where zombies would not visually rotate.<br>\
 Fixed bug where attack menu would not automatically close after usage if you had another menu open.<br>\
+Fixed bug where zombies would not end their turn after you died and started a new game.<br> \
 <br>\
 Balance changes:<br>\
+Disco Zombie now can’t summon backup dancers immediately. (1.8.1)<br>\
 Peashooter health increased from 125 to 150<br>\
 Peashooter pea accuracy increased from 95% to 100%<br>\
 Pea Gatling cooldown time decreased from 3 turns to 2 turns<br>\
